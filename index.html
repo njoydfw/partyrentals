@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Joy DFW Party Rentals</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="section-one" style="background-image: url('images/Background1.jpg')">
+     
+        <!--Navigation Menu-->
+        <nav>
+            <!--Personal Logo-->
+            <img src="images/logo.png" class="logo"/>
+            <!--Menu-->
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Text-->
+        <div class="text-container">
+            <div class="align-into-text">
+                <p>Bring on the <b>FUN</b>!</p>
+            </div>
+            <p>We are 'N Joy DFW Party Rentals</p>
+            <div class="align-into-text">
+                <p>We would love to help <b>YOU</b> equip your event!<br> Browse through our inventory, decide on a date, and give us a call!</p>
+    
+                <button class="contact-us-first-btn" id="contact_button"><a class="contact-us-first-btn2" href="contact.html">Contact Us</a></button>
+                <button class="download-flyer"><a class="download-flyer2" href="images/Flyer.pdf" download="NJoyDFWFlyer.pdf">Download Flyer</a></button>
+            </div>
+            </div>
+
+        <!--My Image-->
+        <img src="images/blue.fun.jpg" class="myImage" alt="image" />
+
+    </section>
+
+    <!--About Us-->
+    <div class="about-container">
+        <!--Image-->
+        <img class="teampic" src="images/workers.jpg" />
+        <!--About Text-->
+        <div class="about-text" id="about_section">
+            <p>About Us</p>
+            <div class="align-into-text2">
+                <p>We are a small family business located South of Fort Worth.</p>
+                <p> We are seeking to bring you and your family some fun and lots of joy!</p>
+                <p>We have bounces, water slides, tables, chairs, generators, party decorations & more.</p>
+                <p>Check out our inventory and let us know what captures your interest.</p>
+                <p><b>Thank you!</b></p>
+
+                <!--Button-->
+                <button class="view.inventory"><a class="view.inventory2" href="inventory.html">Get Started!</a></button>
+                <button class="contact-us" id="contact_button"><a class="contact-us2" href="contact.html">Contact Us</a></button>
+                <button class="download-flyer"><a class="download-flyer2" href="images/Flyer.pdf" download="NJoyDFWFlyer.pdf">Download Flyer</a></button>
+            </div>
+        </div>
+    </div>
+
+
+     <!--Inventory-->
+     <div class="inventory" id="inventory_section">
+         <!--Inventory Text-->
+         <div class="inventory-text">
+            <p>Inventory</p>
+            <p>Water Slides, Concessions, Wedding Decorations, Photography & More...</p>
+            <p>Browse through our inventory. We have water slides, bounces, boxing rings, cotton candy machine,
+                hot dog warmer, table cloths, chair spandex, bows, professional photography, face painting, character dress-ups, generators, & more!
+            </p>
+         </div>
+
+         <!--Carousel of Pictures-->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/bigbluewaterslide.png" style="width:100%">
+                <div class="text">Big Blue Log - 20ft High</div>
+                </div>
+                
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/greenwaterslide.png" style="width:100%">
+                <div class="text">Green Palm Tree Water Slide - 14ft High</div>
+                </div>
+                
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/cottoncandymach.png" style="width:100%">
+                <div class="text">Cotton Candy Machine - Includes 30 servings</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/wedding.png" style="width:100%">
+                    <div class="text">Wedding Decorations</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/facepaint2.jpeg" style="width:100%">
+                    <div class="text">Face Painting</div>
+                </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/pinkcastle.png" style="width:100%">
+                <div class="text">Pink Castle Bounce Slide Combo - 14ft High </div>
+            </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+                
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+
+            <div class="all-invent-button">
+                <button class="all-inventory"><a href="inventory.html">All Inventory</a></button>
+            </div>
+            <!--Inventory Boxes-->
+            <div class="box-container">
+
+                <!--Box 1 - Water Slides-->
+                <div class="box-1">
+                    <img src="images/bigbluewaterslide.png" alt="Water Slide" style="width:90%">
+                    <button class="btn"><a href="inventory.html#inflatable-sec">Inflatables</a></button>
+                </div>
+
+                <!--Box 2 - Concessions-->
+                <div class="box-2">
+                    <img src="images/concessions.png" alt="Concession Stands" style="width:90%">
+                    <button class="btn"><a href="inventory.html#concession-sec">Concession Stands</a></button>
+                </div>
+
+                <!--Box 3 - Wedding Decorations-->
+                <div class="box-3">
+                    <img src="images/weddingdecorations.png" alt="Wedding Decorations" style="width:90%">
+                    <button class="btn"><a href="inventory.html#wedding-sec">Wedding Decorations</a></button>
+                </div>
+
+                <!--Box 4 - Photography-->
+                <div class="box-4">
+                    <img src="images/weddingpic.png" alt="Wedding Photo" style="width:95%">
+                    <button class="btn"><a href="inventory.html#photography-sec">Photography</a></button>
+                </div>
+
+                <!--Box 5 - & More-->
+                <div class="box-5">
+                    <img src="images/facepaint2.jpeg" alt="Face Painting" style="width:90%">
+                    <button class="btn"><a href="inventory.html#miscellaneous-sec">& More...</a></button>
+                </div>
+
+            </div>
+    </div>
+
+
+    <!--Gallery - Picture Events-->
+    <section class="section-two" style="background-image: url('images/ball.fun.jpg')">
+            <p class="gallery-title">Check out our GALLERY - Full of amazing events!</p>
+
+            <!--Kids Fun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/kids.fun.png">
+                    <img src="images/kids.fun.png" alt="Kids Having Fun" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Laughter-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/laughter.png">
+                    <img src="images/laughter.png" alt="Kid Laughing" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Kid Boy's Bounce-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/kidbounce.png">
+                    <img src="images/kidbounce.png" alt="Kid Bounce House" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Blue Quality Check-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/blue.check.jpg">
+                    <img src="images/blue.check.jpg" alt="Blue Slide" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Popcorn Fun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/popcorn.fun.jpg">
+                    <img src="images/popcorn.fun.jpg" alt="Kid with Popcorn" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Boys Fun with Blue Bounce-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/boys.fun.jpg">
+                    <img src="images/boys.fun.jpg" alt="Kids in Slide" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Wedding Kiss-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/wedding.kiss.jpg">
+                    <img src="images/wedding.kiss.jpg" alt="Wedding Kiss" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Snowcone Pour-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/snowcone.pour.jpg">
+                    <img src="images/snowcone.pour.jpg" alt="Snowcones" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Games plus Bounce-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/game.bounce.jpg">
+                    <img src="images/game.bounce.jpg" alt="Chess Game with Green Slide" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+            
+            <!--Mini Photo Costumes-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/mini.photo.jpeg">
+                    <img src="images/mini.photo.jpeg" alt="Miniature Photo" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Big blue fun for Everyone-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/for.everyone.jpg">
+                    <img src="images/for.everyone.jpg" alt="People on slide" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Boy's Bounce Kids-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/boys.bounce.fun.jpg">
+                    <img src="images/boys.bounce.fun.jpg" alt="Kids on bounce" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--SnowCone Taste-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/icecones.jpg">
+                    <img src="images/icecones.jpg" alt="Eating Snowcones" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Kayak Fun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/kayak.fun.jpg">
+                    <img src="images/kayak.fun.jpg" alt="People in Kayak" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Island Fun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/island.fun.jpg">
+                    <img src="images/island.fun.jpg" alt="Island Inflatable" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Fun in the Sun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/fun.in.the.sun.png">
+                    <img src="images/fun.in.the.sun.png" alt="Child on Bounce" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--View with a Bounce-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/view.bounce.jpg">
+                    <img src="images/view.bounce.jpg" alt="Bounce with a nice view" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Family Fun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/family.fun.jpg">
+                    <img src="images/family.fun.jpg" alt="Family enjoying bounce" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Two Rentals-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/two.rentals.jpg">
+                    <img src="images/two.rentals.jpg" alt="Two Bounces" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Couple Game on Boxing Ring-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/couple.jpg">
+                    <img src="images/couple.jpg" alt="Couple having fun" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Kid on Big Blue-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/bigblue.boy.jpg">
+                    <img src="images/bigblue.boy.jpg" alt="Kid on Big Blue Bounce" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Baby Fun-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/baby.fun.jpg">
+                    <img src="images/baby.fun.jpg" alt="Baby with ball" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Star Wars Costume-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/starwars.jpg">
+                    <img src="images/starwars.jpg" alt="Star wars Costume Characters" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+             <!--Cotton Candy-->
+             <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/cottoncandy.png">
+                    <img src="images/cottoncandy.png" alt="Cotton Candy" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Batman Face Paint-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/batman.face.jpg">
+                    <img src="images/batman.face.jpg" alt="Batman Face Paint" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Baby Friends-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/baby.friends.png">
+                    <img src="images/baby.friends.png" alt="Kids laughing on bounce" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+            <!--Table SetUp with Boxing Ring-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/table.setup.jpg">
+                    <img src="images/table.setup.jpg" alt="Table Set Up" width="600" height="400">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        
+
+     <!--Contact Us-->
+     <section class="contact-us-section" id="contact_section" style="background-image: url('images/Background1.jpg');">
+        <div class="adjust-contact">
+            <p>If you would like additional information please <b>CONTACT US!</b></p>
+            <button id="contact_button"><a href="contact.html">Contact Us</a></button>
+        </div>
+    </section>
+
+     <!--Footer-->
+     <footer>
+         <p>Thank you for considering us & taking your time to view our website!</p>
+         <p>Follow us on Social Media!</p>
+
+         <!--Social Media-->
+         <div class="social-icons">
+             <a href="https://www.facebook.com/NJoyDFWPartyRentals/"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.instagram.com/njoydfwparty/"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.snapchat.com/add/karriiiiina"><i class="fab fa-snapchat"></i></a><!--Still have to change snapchat-->
+         </div>
+         <!--Personal Logo-->
+            <img src="images/logo.png" class="logo"/>
+
+     </footer>
+
+
+</body>
+</html>

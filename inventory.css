@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Documentation */
+body {
+  background-color: #f6f5f5;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Top Section with Heading*/
+section {
+  width: 100%;
+  height: 32vh;
+  background-color: rgb(129, 194, 255);
+  /*background-image: url("../images/backgroundPic.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+/*Update heading per screen size*/
+@media only screen and (max-width: 600px) {
+  nav {
+    height: 160px;
+  }
+  nav ul {
+    display: grid;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: RoadTest;
+  color: #000000;
+  font-size: 22px;
+  height: 90px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+/*Title of Page*/
+.title {
+  line-height: 0px;
+  margin: 45px 0px 25px;
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 50px;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Inventory Container Section */
+.inventory {
+  height: 900px;
+  background-color: white;
+  padding: 2% 10% 0px 10%;
+}
+
+.inventory-container {
+  width: 80%;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inventory-container img {
+  height: 270px;
+}
+.inventory-text {
+  width: 500px;
+  margin: 60px 10px;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+
+/*Container Info (paragraphs)*/
+.inventory-text p:nth-child(1) {
+  color: #403e3e;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.6;
+}
+.inventory-text p:nth-child(2) {
+  color: black;
+  font-size: 18px;
+  font-family: calibri;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.inventory-text p:nth-child(3) {
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+  font-family: calibri;
+  line-height: 1.6;
+}
+
+/*Download Flyer Button*/
+.download-flyer {
+  width: 160px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  outline: none;
+  font-family: calibri;
+  background-color: rgb(0, 183, 255);
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+/*Updating Inventory image, pic & paragraph to fit screen size*/
+@media only screen and (max-width: 800px) {
+  .inventory-container {
+    display: grid;
+  }
+  .inventory-container img {
+    height: 200px;
+    margin: 2% auto 5px auto;
+  }
+  .inventory-text {
+    width: 320px;
+    margin: -5% auto 5% auto;
+  }
+  .inventory-text p:nth-child(1) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .inventory-text p:nth-child(2) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .inventory-text p:nth-child(3) {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+}
+
+/*Inventory Boxes */
+/*Starts with Inflatables...etc*/
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10% 20px 10%;
+}
+
+/*Inventory Item text boxes with description of item*/
+.box-paragraph {
+  width: 160px;
+  height: 30px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  padding: 2% 10% 20px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-inventory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+/*Aligning Inflatable Items Centered*/
+.inventory-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Inflatables*/
+.inflatables,
+.concessions,
+.wedding,
+.miscellaneous,
+.photography {
+  margin: 55px 0px 25px;
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 30px;
+}
+
+/*Updating box items per Screen Size*/
+@media only screen and (max-width: 800px) {
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5 {
+    width: 300px;
+    height: 300px;
+    box-shadow: -10px 2px 20px rgba(0, 0, 0, 0.2);
+  }
+  .inventory-items {
+    width: 100%;
+  }
+  .inflatables,
+  .concessions,
+  .wedding,
+  .miscellaneous,
+  .photography {
+    margin: 10px 10px 10px;
+  }
+  .box-container {
+    display: grid;
+    justify-content: space-between;
+    padding: 1% 5% 10px 5%;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Footer*/
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+footer p {
+  font-family: calibri;
+}
+footer p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  line-height: 10px;
+}
+
+/*Social Icons*/
+.social-icons {
+  display: flex;
+}
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 151, 207);
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.social-icons i {
+  color: black;
+}
+.social-icons a:hover {
+  background-color: white;
+  box-shadow: 2px 2px 12px black;
+  transition: all ease 0.5s;
+}
